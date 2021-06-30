@@ -13,10 +13,19 @@ import java.util.logging.Logger;
 import rs.ac.bg.fon.nprog.transfer.ServerskiOdgovor;
 
 /**
- *
+ * Apstraktna klasa koja predstavlja opstu sistemsku operaciju.
+ * 
  * @author tamara
+ * @version 1.0
  */
 public abstract class OpstaSistemskaOperacija {
+	/**
+	 * Otvara konekciju sa bazom, izvrsava konkretnu operaciju i vrsi commit nad bazom ukoliko nije doslo do greske.
+	 * 
+	 * @param object Objekat nad kojim se izvrsava operacija kao Object.
+	 * @return Odgovor od servera kao ServerskiOdgovor.
+	 * 
+	 */
      
     public ServerskiOdgovor izvrsiOperaciju(Object object){
         ServerskiOdgovor so = new ServerskiOdgovor();
@@ -44,8 +53,21 @@ public abstract class OpstaSistemskaOperacija {
         
         return so;
     }
+    /**
+     * Metoda koja proverava preduslove objekta.
+     * 
+     * @param object Objekat kao Object.
+     * @throws java.lang.Exception ukoliko neki od preduslova nije zadovoljen.
+     */
 
     protected abstract void proveriPreduslove(Object object) throws Exception;
+    /**
+     * Metoda koja je zasluzna za izvrsavanje konkretne sistemske operacije.
+     * 
+     * @param object Objekat kao Object.
+     * @return Odgovor od servera kao ServerskiOdgovor.
+     * @throws java.lang.Exception ukoliko dodje do greske u toku izvrsavanja operacije.
+     */
 
     protected abstract ServerskiOdgovor izvrsiKonkretnuOperaciju(Object object) throws Exception;
 

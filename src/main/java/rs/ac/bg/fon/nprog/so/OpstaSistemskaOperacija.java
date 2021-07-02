@@ -30,8 +30,8 @@ public abstract class OpstaSistemskaOperacija {
     public ServerskiOdgovor izvrsiOperaciju(Object object){
         ServerskiOdgovor so = new ServerskiOdgovor();
         try {
-            DBBroker.getInstance().ucitajDrajver();
-            DBBroker.getInstance().otvoriKonekciju(); 
+        	DBBroker.getInstance().ucitajDrajver();
+        	DBBroker.getInstance().otvoriKonekciju(); 
             so = izvrsiKonkretnuOperaciju(object);
             DBBroker.getInstance().commit();
         } catch (Exception ex) {
@@ -45,7 +45,7 @@ public abstract class OpstaSistemskaOperacija {
             so.setPoruka(ex.getMessage());
         }finally{
             try {
-                DBBroker.getInstance().zatvoriKonekciju();
+            	DBBroker.getInstance().zatvoriKonekciju();
             } catch (SQLException ex) {
                 Logger.getLogger(OpstaSistemskaOperacija.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -70,5 +70,7 @@ public abstract class OpstaSistemskaOperacija {
      */
 
     protected abstract ServerskiOdgovor izvrsiKonkretnuOperaciju(Object object) throws Exception;
+	
+    
 
 }

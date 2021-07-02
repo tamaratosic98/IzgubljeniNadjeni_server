@@ -1,1 +1,3 @@
-/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/IzgubljeniNadjeni_server/AppTest.java
+/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/korisnik/OdjavaKorisnikaSOTest.java
+/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/korisnik/RegistracijaKorisnikaSOTest.java
+/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/korisnik/PrijavaKorisnikaSOTest.java

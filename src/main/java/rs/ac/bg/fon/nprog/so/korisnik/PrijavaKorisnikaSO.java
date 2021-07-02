@@ -20,7 +20,7 @@ import rs.ac.bg.fon.nprog.transfer.ServerskiOdgovor;
  * @author tamara
  */
 public class PrijavaKorisnikaSO extends OpstaSistemskaOperacija{
-
+	
     @Override
     protected void proveriPreduslove(Object object) throws Exception {
         

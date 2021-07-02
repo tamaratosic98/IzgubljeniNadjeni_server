@@ -1,4 +1,4 @@
-package rs.ac.bg.fon.nprog.so.korisnik;
+package rs.ac.bg.fon.nprog.so.prijava_pronalaska_psa;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,14 +7,14 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import rs.ac.bg.fon.nprog.db.DBBroker;
-import rs.ac.bg.fon.nprog.domen.Korisnik;
+import rs.ac.bg.fon.nprog.domen.PrijavaPronalaskaPsa;
 import rs.ac.bg.fon.nprog.transfer.ServerskiOdgovor;
 
-class RegistracijaKorisnikaSOTest {
-	private RegistracijaKorisnikaSO operacija;
+class UcitajPrijavuPronalaskaPsaSOTest {
+	UcitajPrijavuPronalaskaPsaSO operacija;
 	@BeforeEach
 	void setUp() throws Exception {
-		operacija = new RegistracijaKorisnikaSO();
+		operacija = new UcitajPrijavuPronalaskaPsaSO();
 		DBBroker.getInstance().ucitajDrajver();
     	DBBroker.getInstance().otvoriKonekciju(); 
 	}
@@ -27,11 +27,14 @@ class RegistracijaKorisnikaSOTest {
 
 	@Test
 	void testIzvrsiKonkretnuOperaciju() throws Exception {
-		Korisnik k = new Korisnik(-1,"nov","nov","nov","nov","9dd4e461268c8034f5c8564e155c67a6");
-		ServerskiOdgovor so  = operacija.izvrsiKonkretnuOperaciju(k);
+		PrijavaPronalaskaPsa ppp = new PrijavaPronalaskaPsa();
+		ppp.setPrijavaPronalaskaPsaId(1);
+		ServerskiOdgovor so = operacija.izvrsiKonkretnuOperaciju(ppp);
 		assertNotNull(so);
-		assertEquals("Korisnik je uspešno registrovan na sistem. ",so.getPoruka());
+		PrijavaPronalaskaPsa odgovor = (PrijavaPronalaskaPsa)so.getOdgovor();
+		assertEquals(1, odgovor.getPrijavaPronalaskaPsaId());
 		assertTrue(so.isUspesno());
+		assertEquals("Sistem je učitao prijavu pronalaska psa. ",so.getPoruka());
 	}
 
 }

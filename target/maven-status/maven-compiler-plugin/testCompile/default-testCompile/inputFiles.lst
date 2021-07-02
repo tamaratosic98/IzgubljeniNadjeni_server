@@ -1,10 +1,13 @@
-/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/korisnik/OdjavaKorisnikaSOTest.java
+/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/pronalazak/UcitajPronalazakSOTest.java
 /Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/prijava_pronalaska_psa/ObrisiPrijavuPronalaskaPsaSOTest.java
-/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/prijava_pronalaska_psa/UcitajListuPrijavaPronalaskaPsaSOTest.java
+/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/pronalazak/ZapamtiPronalazakSOTest.java
 /Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/prijava_pronalaska_psa/UcitajPrijavuPronalaskaPsaSOTest.java
+/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/prijava_pronalaska_psa/ZapamtiPrijavuPronalaskaPsaSOTest.java
+/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/korisnik/OdjavaKorisnikaSOTest.java
+/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/prijava_pronalaska_psa/UcitajListuPrijavaPronalaskaPsaSOTest.java
 /Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/lokacija/ZapamtiLokacijuSOTest.java
 /Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/korisnik/RegistracijaKorisnikaSOTest.java
 /Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/prijava_pronalaska_psa/NadjiPrijavePronalaskaPsaSOTest.java
-/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/prijava_pronalaska_psa/ZapamtiPrijavuPronalaskaPsaSOTest.java
+/Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/pronalazak/NadjiPronalaskeSOTest.java
 /Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/korisnik/PrijavaKorisnikaSOTest.java
 /Users/tamara/eclipse-workspace/IzgubljeniNadjeni_server/src/test/java/rs/ac/bg/fon/nprog/so/lokacija/UcitajListuLokacijaSOTest.java
